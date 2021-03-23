@@ -28,7 +28,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-}
+} 
 
 section {
     background-color: var(--color5);
@@ -116,4 +116,4 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+  } */
