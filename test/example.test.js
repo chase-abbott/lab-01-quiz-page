@@ -13,4 +13,6 @@ test('time to test a function', (expect) => {
     expect.equal(isYes('YES'), expected);
     expect.equal(isYes('yes'), expected);
     expect.equal(isYes('nah'), !expected);
+    expect.equal(isYes('yellow'), expected);
+    expect.equal(isYes('ya'), !expected);
 });
