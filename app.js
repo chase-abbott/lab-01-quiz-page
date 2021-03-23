@@ -8,10 +8,10 @@ button.addEventListener('click', () => {
     alert('Welcome to the Quiz!');
     const wantsToTakeTheQuiz = confirm('Do you want to take the quiz?');
 
-    if(!wantsToTakeTheQuiz) {
+    if (!wantsToTakeTheQuiz) {
         alert('All good!');
         return;
-    };
+    }
 
     const name = prompt('What is your name?');
 
@@ -32,4 +32,4 @@ button.addEventListener('click', () => {
 
 
 
-})
+});
