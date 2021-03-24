@@ -25,6 +25,9 @@ button:active {
 
 div{
     margin: 25px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    
 }
 
 .glass {
