@@ -13,10 +13,8 @@ button.addEventListener('click', () => {
         return;
     }
 
-    const name = prompt('What is your name?');
-
     let score = 0;
-
+    const name = prompt('What is your name?');
     const firstAnswer = prompt('Can dark skinned grapes produce white wine?');
     const secondAnswer = prompt('Is Grenache a major grape variety?');
     const thirdAnswer = prompt('Is chardonnay a red grape?');
@@ -24,9 +22,11 @@ button.addEventListener('click', () => {
     if (isYes(firstAnswer)) score ++;
     if (isNo(secondAnswer)) score ++;
     if (isNo(thirdAnswer)) score ++;
+    
+    let percent = Math.round((score / 3) * 100);
 
-    const resultsString = `${name} you got ${score} out of three correct!`;
-
+    const resultsString = `${name}, you got ${percent}% on the quiz!`;
+    
     alert(resultsString);
     results.textContent = resultsString;
 

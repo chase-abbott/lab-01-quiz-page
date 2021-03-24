@@ -21,6 +21,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color2);
     color: white;
+    font-weight: 100;
 }
 
 main {
