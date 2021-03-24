@@ -1,5 +1,50 @@
 /* add home page styles here */
 
-h1 {
-    font-weight: 500;
+h1, h3 {
+    font-weight: 600;
+}
+
+button {
+    background-color: #722f37;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 75px;
+}
+
+button:hover {
+    background-color: #521f25;
+}
+
+button:active {
+    background-color: #521f25;
+    transform: translateY(2px);
+}
+
+div{
+    margin: 25px;
+}
+
+.glass {
+    margin-bottom: 30px;
+}
+p {
+    max-width: 700px;
+}
+
+#red-wine {
+    width: 150px;
+    margin-left: 25px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: .25fr 1fr .25fr;
+    align-items: center;
+   
+}
+
+#white-wine {
+    width: 125px;
+    margin-right: 15px;
 }

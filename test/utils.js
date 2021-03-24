@@ -4,7 +4,13 @@ export function isYes(someString) {
     } else {
         return false;
     }
-}
+};
+
+export function isNo(someString) {
+    if (someString[0].toLowerCase() === 'n') {
+        return true;
+    } 
+};
 
 // export function isYes(someString) {
     
