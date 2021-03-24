@@ -6,6 +6,12 @@ export function isYes(someString) {
     }
 }
 
+export function isNo(someString) {
+    if (someString[0].toLowerCase() === 'n') {
+        return true;
+    } 
+}
+
 // export function isYes(someString) {
     
 //     return someString[0].toLowerCase() === 'y';

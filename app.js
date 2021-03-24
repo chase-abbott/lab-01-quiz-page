@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { isYes } from './test/utils.js';
+import { isYes, isNo } from './test/utils.js';
 
 const button = document.getElementById('test');
 const results = document.getElementById('results');
@@ -22,14 +22,12 @@ button.addEventListener('click', () => {
     const thirdAnswer = prompt('Is chardonnay a red grape?');
 
     if (isYes(firstAnswer)) score ++;
-    if (!isYes(secondAnswer)) score ++;
-    if (!isYes(thirdAnswer)) score ++;
+    if (isNo(secondAnswer)) score ++;
+    if (isNo(thirdAnswer)) score ++;
 
     const resultsString = `${name} you got ${score} out of three correct!`;
 
     alert(resultsString);
     results.textContent = resultsString;
-
-
 
 });
